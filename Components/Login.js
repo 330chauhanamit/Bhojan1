@@ -9,10 +9,9 @@ const Login = () => {
        // const [pass, setPass] = useState( '' );
        const [usr, setUsr] = useState( {
               user: '',
-              pass: ''
+              pass: '',
        } );
-       console.log( usr );
-       console.log("Hello");
+       console.log( usr.user );
        const [alert, setAlert] = useState( '' );
        const login = async () => {
               const { user, pass } = usr;
@@ -62,12 +61,12 @@ const Login = () => {
                      </View>
                      <View >
                             <TextInput style={ style.input }
-                                   onChangeText={ ( user ) => setUsr( { user: user, pass: pass } ) }
+                                   onChangeText={ ( user ) => setUsr( { user } ) }
                                    placeholder='Username'></TextInput>
                      </View>
                      <View>
                             <TextInput style={ style.input }
-                                   onChangeText={ ( pass ) => setUsr( { user: user, pass: pass } ) }
+                                   onChangeText={ ( pass ) => setUsr( { pass} ) }
                                    placeholder='Password' secureTextEntry={ true }></TextInput>
                      </View>
                      <View style={ style.buttons_container }>

@@ -17,7 +17,7 @@ export class App extends Component {
     return (
 
       <NavigationContainer style={ { height: StatusBar.currentHeight } }>
-        <Stack.Navigator initialRouteName="Signup" headerMode={ false }>
+        <Stack.Navigator initialRouteName="Login" headerMode={ false }>
           <Stack.Screen name="Signup" component={ SignupScreen } />
           <Stack.Screen name="Login" component={ LoginScreen } />
           <Stack.Screen name="Main" component={ MainScreen } />
